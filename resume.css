@@ -1,0 +1,431 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.resume-container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Box Styles with Animation */
+.box {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Left Column */
+.left-column {
+    background-color: #1e1e64;
+    color: white;
+    padding: 30px;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.profile {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    margin-bottom: 20px; /* Space below the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    animation: fadeIn 1s ease-in-out; /* Apply the fade-in animation */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+}
+
+/* Hover Effect */
+.profile:hover {
+    transform: translateY(-5px); /* Move slightly upward on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Intensify shadow on hover */
+}
+.profile-pic {
+    border-radius: 30%;
+    width: 150px;
+    margin-bottom: 10px;
+    margin-top:20px;
+}
+
+.profile h1 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.profile span {
+    color: #ffd700;
+}
+
+.left ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.left li {
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+/* Right Column */
+.right-column {
+    padding: 30px;
+    width: 65%;
+}
+
+.experience h2, .education h2, .skills h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #1e1e64;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.job h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #6c5ce7;
+}
+
+.job ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 720px) {
+    .resume-container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .left-column, .right-column {
+        width: 100%;
+    }
+
+    .profile-pic {
+        width: 120px;
+    }
+}
+/* Contact Section Box Styling */
+.contact {
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px; /* Padding inside the box */
+    margin-bottom: 20px; /* Space below the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    animation: fadeIn 1s ease-in-out; /* Apply the fade-in animation */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+}
+
+/* Hover Effect */
+.contact:hover {
+    transform: translateY(-5px); /* Move slightly upward on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Intensify shadow on hover */
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Start from below */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* End at normal position */
+    }
+}
+.box-profile-summary {
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    margin-bottom: 20px; /* Space below the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    animation: fadeIn 1s ease-in-out; /* Apply the fade-in animation */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+}
+
+/* Hover Effect */
+.box-profile-summary:hover {
+    transform: translateY(-5px); /* Move slightly upward on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Intensify shadow on hover */
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Start from below */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* End at normal position */
+    }
+}
+.contact {
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    margin-bottom: 20px; /* Space below the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    animation: fadeIn 1s ease-in-out; /* Apply the fade-in animation */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+}
+
+/* Hover Effect */
+.contact:hover {
+    transform: translateY(-5px); /* Move slightly upward on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Intensify shadow on hover */
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Start from below */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* End at normal position */
+    }
+}
+.box-languages {
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    margin-bottom: 20px; /* Space below the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    animation: fadeIn 1s ease-in-out; /* Apply the fade-in animation */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+}
+
+/* Hover Effect */
+.box-languages:hover {
+    transform: translateY(-5px); /* Move slightly upward on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Intensify shadow on hover */
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Start from below */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* End at normal position */
+    }
+}
+/* Link styling to remove default appearance */
+.link {
+    text-decoration: none; /* Remove underline from link */
+    display: block; /* Ensure the div fills the link area */
+}
+
+/* Box Styling */
+.box {
+    background-color:white;
+    color: rgb(21, 13, 13);
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Hover effect for interactivity */
+.box:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+/* Focus state for accessibility */
+.box:focus {
+    outline: 2px solid #ffd700; /* Yellow outline on focus */
+    outline-offset: 4px; /* Slight space between border and outline */
+}
+/* Flip Card Container */
+.flip-card {
+    background-color:transparent ;
+    width: auto;
+    height: 400px;
+    perspective: 1000px; /* Perspective effect for 3D */
+
+}
+
+/* Inner Wrapper for the flip effect */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Front and Back Sides */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Hide back side initially */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Front Side Styling */
+.flip-card-front {
+    background-color: #1e1e64;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Back Side Styling */
+.flip-card-back {
+    background-color: #3b3281 ;
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+}
+
+/* Flip Effect on Hover */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Profile Image Styling */
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    margin-bottom: 10px;
+    
+}
+.contact-form {
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    margin-bottom: 20px; /* Space below the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    animation: fadeIn 1s ease-in-out; /* Apply the fade-in animation */
+}
+
+/* Form Group Styles */
+.form-group {
+    margin-bottom: 15px; /* Space between form groups */
+}
+
+/* Input and Textarea Styles */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding inside inputs */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    transition: border-color 0.3s; /* Smooth transition */
+}
+
+/* Focus State for Inputs */
+input:focus,
+textarea:focus {
+    border-color: #1e1e64; /* Change border color on focus */
+    outline: none; /* Remove outline */
+}
+
+/* Button Styles */
+button {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding for the button */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #1e1e64; /* Button color */
+    color: white; /* Button text color */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Hover Effect on Button */
+button:hover {
+    background-color: #ffd700; /* Change color on hover */
+}
+
+.personal-info{
+    margin-left:5px;
+
+}
+
+@media (max-width: 720px) {
+    .flip-card{
+        flex-direction: column;
+        width: 80%;
+        
+    }}
+@media (max-width: 500px) {
+        .flip-card{
+            flex-direction: column;
+            width: 80%;
+            height:300px;
+        }
+    
+    }
+    /* Responsive Text */
+.contact h2 {
+    font-size: 1.5rem; /* Adjust h2 size for responsiveness */
+    margin-bottom: 15px;
+}
+
+.contact p {
+    font-size: 1rem; /* Default font size */
+    line-height: 1.5; /* Increase line height for readability */
+    overflow-wrap: break-word; /* Ensure long words break properly */
+    word-wrap: break-word; /* For older browsers */
+    max-width: 100%; /* Limit the width of text */}
+    @media (max-width: 720px) {
+        .contact h2 {
+            font-size: 1.2rem; /* Smaller h2 size for mobile */
+        }
+    
+        .contact p {
+            font-size: 0.9rem; /* Smaller paragraph text for mobile */
+        }
+    }

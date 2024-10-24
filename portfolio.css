@@ -1,0 +1,234 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: #141414;
+    color: #ffffff;
+    overflow-x: hidden; /* Prevents horizontal scroll */
+   
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    background: #141414;
+    color: #fff;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+header .logo {
+    float: left;
+    font-size: 24px;
+}
+header nav {
+    float: right;
+}
+header nav ul {
+    list-style: none;
+}
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+header nav ul li a:hover {
+    color: #f39c12;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #1f1f1f;
+    padding: 100px 0;
+    animation: slideUp 1s ease-out forwards;
+}
+.hero-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero-content {
+    max-width: 50%;
+    animation: slideLeft 1s ease-out forwards;
+}
+.hero-content h1 {
+    font-size: 48px;
+    color: #f39c12;
+}
+.hero-content p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+.cta-button {
+    display: inline-block;
+    background: #f39c12;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+    animation: pulse 2s infinite;
+}
+.cta-button:hover {
+    background-color: #0056b3;
+}
+.hero-image img {
+    max-width: 300px;
+    border-radius: 10px;
+    opacity: 0;
+    animation: zoomIn 1s ease-out forwards;
+}
+
+/* Services Section */
+.services {
+    background: #1f1f1f;
+    padding: 50px 0;
+    text-align: center;
+    animation: fadeIn 1.5s ease-out forwards;
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+.service-card {
+    background: #292929;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    animation: bounce 1s ease infinite alternate;
+}
+.service-card h3 {
+    color: #f39c12;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 1s 2s forwards;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-10px);
+    }
+}
+.back{
+    text-align:center;
+}
+
+/* Style for the back button */
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #f39c12; /* Blue button */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* Animation for hover effect */
+.back-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.1); /* Slight zoom on hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
+}
+.back-one{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #f39c12; /* Blue button */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.back-one:hover{
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.1); /* Slight zoom on hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
+}
+
+

@@ -1,0 +1,352 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+html, body {
+    height: 100%;
+    overflow-y: auto; /* Allow vertical scrolling */
+    
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f4f9f9; /* Light background for the body */
+    color: #333; /* Darker text for better contrast */
+    background-image: url('animation.webp'); /* Add the animated background */
+    animation: slow-background 20s infinite; /* Slow down the animation */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background */
+    background-repeat: no-repeat; /* Do not repeat the background */
+    background-attachment: fixed; /* Fix the background to prevent scrolling */
+}
+
+
+header {
+    background-color: #1e1e64; /* Dark blue for the header */
+    color: #f39c12; /* Golden text for contrast */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Separate box for title */
+.title-box {
+    background-color: #1e1e64; /* Slightly darker blue for distinction */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.title h1 {
+    font-size: 2.5rem;
+    color: #f39c12; /* Golden text for header titles */
+}
+
+.title h2 {
+    font-size: 1.5rem;
+    color: #f39c12; /* Golden text for subtitle */
+    margin-top: 10px;
+}
+
+/* Separate box for navbar */
+.navbar-box {
+    background-color: #333; /* Dark background for navbar */
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    margin: 0 15px;
+    color: #f39c12; /* Golden text for nav links */
+    font-size: 1.2rem;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #fff; /* White hover effect for nav links */
+}
+
+.navbar a:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #f39c12; /* Golden underline on hover */
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.navbar a:hover:after {
+    transform: scaleX(1);
+}
+
+section {
+    padding: 40px;
+    background-color: #fff; /* White background for content sections */
+    margin: 20px auto;
+    max-width: 90%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    font-size: 1rem;
+    color: #333; /* Dark text for readability */
+}
+
+h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #1e1e64; /* Soft blue for section titles */
+}
+
+.partner-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.partner {
+    flex-basis: 30%;
+    padding: 20px;
+    text-align: center;
+}
+
+.partner h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333; /* Consistent dark color for subheadings */
+}
+
+.partner p {
+    color: #666; /* Softer gray for partner descriptions */
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+ul li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333; /* Dark text for list items */
+}
+
+iframe {
+    border-radius: 10px;
+    border: 1px solid #ddd; /* Light border around iframe */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333; /* Dark footer background */
+    color: #f39c12; /* Golden text for footer */
+    font-size: 1.1rem;
+}
+
+footer a {
+    color: #f39c12; /* Golden footer links */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+.header-content{
+    display: flex;
+    justify-content: space-between;
+   
+}
+#links{
+    display: flex;
+}
+#links a{
+    justify-content: space-between;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+    }
+
+    .title h1 {
+        font-size: 2rem;
+    }
+
+    .navbar a {
+        font-size: 1rem;
+    }
+
+    .partner {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title h1 {
+        font-size: 1.8rem;
+    }
+
+    .title h2 {
+        font-size: 1.2rem;
+    }
+
+    .navbar a {
+        font-size: 0.9rem;
+    }
+}
+.back{
+    text-align:center;
+}
+
+/* Style for the back button */
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #f39c12; /* Blue button */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* Animation for hover effect */
+.back-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.1); /* Slight zoom on hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
+}
+.back-one{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #f39c12; /* Blue button */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.back-one:hover{
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.1); /* Slight zoom on hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
+}
+
+#links {
+    display: flex;
+    justify-content: space-evenly; /* Center the link-box horizontally */
+    padding: 20px 0; /* Vertical padding for the section */
+}
+
+
+
+
+.link-box h3 {
+    margin: 0 0 15px 0; /* Space below the heading */
+    color: #1e1e64; /* Darker color for the heading */
+}
+
+.link-box a {
+    display: inline-flex; /* Each link on its own line */
+    margin-bottom: 10px; /* Space between links */
+    font-size: 1rem; /* Base font size */
+    color: #007bff; /* Bootstrap primary color for links */
+    text-decoration: none; /* Remove underline */
+    padding: 20px; /* Padding inside the link */
+    border: 1px solid transparent; /* Default border */
+    border-radius: 4px; /* Rounded corners for the link */
+    transition: all 0.3s; /* Smooth transition for hover effects */
+}
+
+.link-box a:hover {
+    background-color: #e9ecef; /* Light gray background on hover */
+    color: #0056b3; /* Darker shade of blue on hover */
+    border-color: #007bff; /* Border color on hover */
+}
+
+@media (max-width: 600px) {
+    .link-box a {
+        font-size: 0.9rem; /* Smaller font size for mobile devices */
+    }
+}
+/* Keyframes for moving background color */
+@keyframes backgroundAnimation {
+    0% { background-color: #1e1e64; }
+    50% { background-color: #283593; } /* Change to a different shade */
+    100% { background-color: #1e1e64; }
+}
+
+header {
+    animation: backgroundAnimation 10s ease infinite; /* Apply animation */
+    color: #f39c12; /* Golden text for contrast */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.link-box a {
+    display: inline-flex; /* Each link on its own line */
+    margin-bottom: 10px; /* Space between links */
+    font-size: 1rem; /* Base font size */
+    color: #007bff; /* Bootstrap primary color for links */
+    text-decoration: none; /* Remove underline */
+    padding: 20px; /* Padding inside the link */
+    border: 1px solid transparent; /* Default border */
+    border-radius: 4px; /* Rounded corners for the link */
+    transition: all 0.3s, transform 0.2s; /* Smooth transition for hover effects */
+}
+
+.link-box a:hover {
+    background-color: #e9ecef; /* Light gray background on hover */
+    color: #0056b3; /* Darker shade of blue on hover */
+    border-color: #007bff; /* Border color on hover */
+    transform: scale(1.05); /* Slightly scale up on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+/* Smooth transition for other elements */
+section {
+    transition: all 0.3s ease; /* Smooth transition for sections */
+}
+
+h3 {
+    transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+h3:hover {
+    color: #ffb74d; /* Change title color on hover */
+}
+
+/* Add the same scaling effect for the footer links */
+footer a:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+@keyframes moving-background {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
